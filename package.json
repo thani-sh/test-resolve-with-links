@@ -1,0 +1,14 @@
+{
+  "name": "test-resolve-with-links",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "A POC to test how node module resolution works when modules are symlinked",
+  "private": true,
+  "workspaces": [
+    "apps/my-app",
+    "apps/my-app2",
+    "libs/my-lib",
+    "libs/my-lib2"
+  ],
+  "packageManager": "yarn@3.6.0"
+}

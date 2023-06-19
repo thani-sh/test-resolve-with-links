@@ -1,0 +1,10 @@
+{
+  "name": "my-lib",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "private": true,
+  "dependencies": {
+    "@thani-sh/variable": "^1.0.0"
+  }
+}

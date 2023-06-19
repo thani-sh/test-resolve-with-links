@@ -1,0 +1,14 @@
+{
+  "name": "my-app2",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "@thani-sh/variable": "^1.0.0",
+    "my-lib2": "workspace:*"
+  }
+}
