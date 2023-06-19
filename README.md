@@ -41,3 +41,5 @@ Attempts to fix the issue:
 - Use `@thanish/variable` as a peerDependency on `my-lib` and install it on `my-app`
   - Fails to run with error `ERR_MODULE_NOT_FOUND`
   - `my-lib` is unable to find the peerDependency although it is installed in `my-app`
+- Use the config `nodeLinker: pnp` on .yarnrc.yml file
+  - Both my-app and my-lib resolves to a single version of the library
