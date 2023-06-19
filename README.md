@@ -20,8 +20,8 @@ Because of how node module resolution works with symlinks, the test app `my-app`
 import { setValue, getValue } from "@thani-sh/variable";
 import { setLibValue, getLibValue } from "my-lib";
 
-setValue("APP");
-setLibValue("LIB");
+setValue(123);
+setLibValue(456);
 
 console.log("app:", getValue());
 console.log("lib:", getLibValue());
@@ -31,9 +31,15 @@ Let's run the code:
 
 ```
 $ yarn workspace my-app start
+app: 123
+lib: 456
+```
 
-app: APP
-lib: LIB
+Ideally, it should output the following:
+
+```
+app: 456
+lib: 456
 ```
 
 Attempts to fix the issue:
